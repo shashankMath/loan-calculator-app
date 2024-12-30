@@ -1,0 +1,7 @@
+{
+  "name": "loan-calculator-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
