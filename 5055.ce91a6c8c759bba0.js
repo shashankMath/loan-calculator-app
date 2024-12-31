@@ -117,7 +117,7 @@ function HomePage_ion_card_57_span_38_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" and ", ctx_r0.completionMonth, " month(s) ");
   }
 }
-function HomePage_ion_card_57_ion_row_77_Template(rf, ctx) {
+function HomePage_ion_card_57_ion_row_70_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "ion-row", 15)(1, "ion-col");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
@@ -206,44 +206,37 @@ function HomePage_ion_card_57_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](52);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](53, "ion-col", 12)(54, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](55, "Actual Savings (Total Advance Payment - Interest Savings) & Savings in %:");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](55, "Interest Savings & Savings in %:");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](56);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](57, "i");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](58, "This will be the amount which will be saved due to advance repayment & %in saving with respect to actual total interest.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](57, "ion-row", 13)(58, "ion-col")(59, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](60, "Year");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](61, "ion-col")(62, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](63, "Month");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](64, "ion-col")(65, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](66, "Principal Paid");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](67, "ion-col")(68, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](69, "Interest Paid");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](59, "ion-row", 11)(60, "ion-col", 12)(61, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](62, "Interest Savings & Savings in %:");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](63);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](64, "ion-row", 13)(65, "ion-col")(66, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](67, "Year");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](68, "ion-col")(69, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](70, "Month");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](71, "ion-col")(72, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](73, "Principal Paid");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](74, "ion-col")(75, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](76, "Interest Paid");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](77, HomePage_ion_card_57_ion_row_77_Template, 11, 14, "ion-row", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](70, HomePage_ion_card_57_ion_row_70_Template, 11, 14, "ion-row", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
   }
   if (rf & 2) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](11, 15, ctx_r0.fdInterestBeforeTaxList[0], "INR"), " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](11, 13, ctx_r0.fdInterestBeforeTaxList[0], "INR"), " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](16, 18, ctx_r0.mfInterestBeforeTaxList[0], "INR"), " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](16, 16, ctx_r0.mfInterestBeforeTaxList[0], "INR"), " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](22, 21, ctx_r0.fdInterestAfterTaxList[0].fdInterestAfterTax, "INR"), " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](22, 19, ctx_r0.fdInterestAfterTaxList[0].fdInterestAfterTax, "INR"), " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](27, 24, ctx_r0.mfInterestAfterTaxList[0].mfInterestAfterTax, "INR"), " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](27, 22, ctx_r0.mfInterestAfterTaxList[0].mfInterestAfterTax, "INR"), " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](33, 27, ctx_r0.netPaymentList[0].netPayment, "INR"), " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](33, 25, ctx_r0.netPaymentList[0].netPayment, "INR"), " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", ctx_r0.completionYear, " year(s) ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"]();
@@ -255,8 +248,6 @@ function HomePage_ion_card_57_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", ctx_r0.formatCurrency(ctx_r0.totalAdvancePayment), " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate2"](" ", ctx_r0.formatCurrency(ctx_r0.actualSavings), ", ", ctx_r0.actualSavingAfterRepayment, " ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](7);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate2"](" ", ctx_r0.formatCurrency(ctx_r0.interestSavings), ", ", ctx_r0.interestSavedPercentage, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](14);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r0.emiList);
@@ -402,17 +393,17 @@ class HomePage {
     this.interestSavings = this.originalTotalInterest - this.totalInterestPaid;
     this.interestSavedPercentage = ((this.originalTotalInterest - this.totalInterestPaid) / this.originalTotalInterest * 100).toFixed(2);
     // Calculate Actual Savings
-    this.actualSavings = this.totalAdvancePayment - this.interestSavings;
-    const savingAfterRepayment = (this.totalAdvancePayment - this.interestSavings) / this.originalTotalInterest * 100;
-    this.actualSavingAfterRepayment = savingAfterRepayment.toFixed(2);
+    //this.actualSavings = this.totalAdvancePayment - this.interestSavings;
+    //const savingAfterRepayment = ((this.actualSavings) / this.originalTotalInterest * 100);
+    //this.actualSavingAfterRepayment = (savingAfterRepayment).toFixed(2);
     // Check if actual savings are more than total advance payments
-    if (savingAfterRepayment < 0) {
-      // Show message to user indicating reconsideration is needed
-      alert('Your actual savings are lower than your total advance payments. You may need to reconsider your loan tenure or adjust your advance payments.');
-    } else {
-      // Continue normal flow if savings are positive
-      alert(`You have saved ₹${this.actualSavingAfterRepayment} in interest.`);
-    }
+    //if (this.interestSavings < 0) {
+    // Show message to user indicating reconsideration is needed
+    //alert('Your actual savings are lower than your total advance payments. You may need to reconsider your loan tenure or adjust your advance payments.');
+    //} else {
+    // Continue normal flow if savings are positive
+    // alert(`You have saved ₹${this.interestSavedPercentage} in interest.`);
+    // }
   }
   // Helper function to toggle visibility of columns
   togglePrincipalPaid() {
@@ -561,7 +552,7 @@ _HomePage.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵd
       });
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](56, "Calculate");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](57, HomePage_ion_card_57_Template, 78, 30, "ion-card", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](57, HomePage_ion_card_57_Template, 71, 28, "ion-card", 10);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     }
     if (rf & 2) {
