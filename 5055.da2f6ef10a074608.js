@@ -307,7 +307,7 @@ class HomePage {
     this.interestSavedPercentage = '';
     this.totalAdvancePayment = 0;
     this.actualSavings = 0;
-    this.actualSavingAfterRepayment = 0;
+    this.actualSavingAfterRepayment = '';
   }
   // Function to calculate EMI and break it down
   calculateEMI() {
@@ -410,14 +410,15 @@ class HomePage {
     this.interestSavedPercentage = ((this.originalTotalInterest - this.totalInterestPaid) / this.originalTotalInterest * 100).toFixed(2);
     // Calculate Actual Savings
     this.actualSavings = this.interestSavings - this.totalAdvancePayment;
-    this.actualSavingAfterRepayment = (this.interestSavings - this.totalAdvancePayment) / this.originalTotalInterest * 100;
+    const savingAfterRepayment = (this.interestSavings - this.totalAdvancePayment) / this.originalTotalInterest * 100;
+    this.actualSavingAfterRepayment = ((this.interestSavings - this.totalAdvancePayment) / this.originalTotalInterest * 100).toFixed(2);
     // Check if actual savings are more than total advance payments
-    if (this.actualSavingAfterRepayment < 0) {
+    if (savingAfterRepayment < 0) {
       // Show message to user indicating reconsideration is needed
       alert('Your actual savings are lower than your total advance payments. You may need to reconsider your loan tenure or adjust your advance payments.');
     } else {
       // Continue normal flow if savings are positive
-      alert(`You have saved ₹${this.actualSavingAfterRepayment.toFixed(2)} in interest.`);
+      alert(`You have saved ₹${this.actualSavingAfterRepayment} in interest.`);
     }
   }
   // Helper function to toggle visibility of columns
