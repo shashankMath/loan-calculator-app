@@ -399,7 +399,7 @@ class HomePage {
     // Check if actual savings are more than total advance payments
     if (this.interestSavings > 0) {
       //Show message to user indicating reconsideration is needed
-      alert(`You have saved ₹${this.interestSavedPercentage} from total interest.`);
+      alert(`You have saved ${this.interestSavedPercentage}% from total interest.`);
     }
   }
   // Helper function to toggle visibility of columns
