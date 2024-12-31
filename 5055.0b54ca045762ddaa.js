@@ -404,7 +404,7 @@ class HomePage {
     // Calculate Actual Savings
     this.actualSavings = this.interestSavings - this.totalAdvancePayment;
     const savingAfterRepayment = (this.interestSavings - this.totalAdvancePayment) / this.originalTotalInterest * 100;
-    this.actualSavingAfterRepayment = ((this.totalAdvancePayment - this.interestSavings) / this.originalTotalInterest * 100).toFixed(2);
+    this.actualSavingAfterRepayment = savingAfterRepayment.toFixed(2);
     // Check if actual savings are more than total advance payments
     if (savingAfterRepayment < 0) {
       // Show message to user indicating reconsideration is needed
