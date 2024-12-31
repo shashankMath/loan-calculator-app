@@ -117,42 +117,36 @@ function HomePage_ion_card_57_span_38_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" and ", ctx_r0.completionMonth, " month(s) ");
   }
 }
-function HomePage_ion_card_57_ion_row_78_Template(rf, ctx) {
+function HomePage_ion_card_57_ion_row_75_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "ion-row", 15)(1, "ion-col", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "ion-row", 15)(1, "ion-col");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "ion-col", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "ion-col");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "ion-col", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "ion-col");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](7, "currency");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](8, "ion-col", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](8, "ion-col");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](9);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](10, "currency");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "ion-col", 17);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](13, "currency");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
   }
   if (rf & 2) {
     const item_r2 = ctx.$implicit;
     const i_r3 = ctx.index;
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction2"](15, _c0, ctx_r0.netPaymentList[i_r3].netPayment < 0 && item_r2.emi > 0, item_r2.emi === 0));
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction2"](11, _c0, ctx_r0.netPaymentList[i_r3].netPayment < 0 && item_r2.emi > 0, item_r2.emi === 0));
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](item_r2.year);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](item_r2.month);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](7, 6, item_r2.emi, "INR"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](7, 5, ctx_r0.principalPaidList[i_r3], "INR"));
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](10, 9, ctx_r0.principalPaidList[i_r3], "INR"));
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](13, 12, ctx_r0.interestPaidList[i_r3], "INR"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](10, 8, ctx_r0.interestPaidList[i_r3], "INR"));
   }
 }
 function HomePage_ion_card_57_Template(rf, ctx) {
@@ -228,15 +222,12 @@ function HomePage_ion_card_57_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](68, "Month");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](69, "ion-col")(70, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](71, "EMI");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](71, "Principal Paid");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](72, "ion-col")(73, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](74, "Principal Paid");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](75, "ion-col")(76, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](77, "Interest Paid");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](74, "Interest Paid");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](78, HomePage_ion_card_57_ion_row_78_Template, 14, 18, "ion-row", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](75, HomePage_ion_card_57_ion_row_75_Template, 11, 14, "ion-row", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
   }
   if (rf & 2) {
@@ -265,7 +256,7 @@ function HomePage_ion_card_57_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate2"](" ", ctx_r0.formatCurrency(ctx_r0.actualSavings), ", ", ctx_r0.actualSavingAfterRepayment, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate2"](" ", ctx_r0.formatCurrency(ctx_r0.interestSavings), ", ", ctx_r0.interestSavedPercentage, " ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](14);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r0.emiList);
   }
 }
@@ -472,7 +463,7 @@ _HomePage.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵd
   selectors: [["app-home"]],
   decls: 58,
   vars: 10,
-  consts: [["type", "number", "placeholder", "Enter loan principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter loan interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter loan tenure in years", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter FD principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter FD annual interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter Mutual Fund principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter MF annual interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter tax rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter annual advance payment", 3, "ngModelChange", "ngModel"], [3, "click"], [4, "ngIf"], [1, "ion-margin-bottom"], ["size", "12", "size-md", "6"], [1, "sticky-header", "ion-margin-bottom"], ["class", "ion-margin-bottom", 3, "ngClass", 4, "ngFor", "ngForOf"], [1, "ion-margin-bottom", 3, "ngClass"], ["size", "12", "size-md", "2"], ["size", "12", "size-md", "3"]],
+  consts: [["type", "number", "placeholder", "Enter loan principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter loan interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter loan tenure in years", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter FD principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter FD annual interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter Mutual Fund principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter MF annual interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter tax rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter annual advance payment", 3, "ngModelChange", "ngModel"], [3, "click"], [4, "ngIf"], [1, "ion-margin-bottom"], ["size", "12", "size-md", "6"], [1, "sticky-header", "ion-margin-bottom"], ["class", "ion-margin-bottom", 3, "ngClass", 4, "ngFor", "ngForOf"], [1, "ion-margin-bottom", 3, "ngClass"]],
   template: function HomePage_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "ion-header")(1, "ion-toolbar")(2, "ion-title");
@@ -568,7 +559,7 @@ _HomePage.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵd
       });
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](56, "Calculate");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](57, HomePage_ion_card_57_Template, 79, 30, "ion-card", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](57, HomePage_ion_card_57_Template, 76, 30, "ion-card", 10);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     }
     if (rf & 2) {
