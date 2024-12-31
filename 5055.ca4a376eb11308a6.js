@@ -397,13 +397,10 @@ class HomePage {
     //const savingAfterRepayment = ((this.actualSavings) / this.originalTotalInterest * 100);
     //this.actualSavingAfterRepayment = (savingAfterRepayment).toFixed(2);
     // Check if actual savings are more than total advance payments
-    //if (this.interestSavings < 0) {
-    // Show message to user indicating reconsideration is needed
-    //alert('Your actual savings are lower than your total advance payments. You may need to reconsider your loan tenure or adjust your advance payments.');
-    //} else {
-    // Continue normal flow if savings are positive
-    // alert(`You have saved ₹${this.interestSavedPercentage} in interest.`);
-    // }
+    if (this.interestSavings > 0) {
+      //Show message to user indicating reconsideration is needed
+      alert(`You have saved ₹${this.interestSavedPercentage} from total interest.`);
+    }
   }
   // Helper function to toggle visibility of columns
   togglePrincipalPaid() {
