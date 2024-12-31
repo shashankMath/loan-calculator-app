@@ -1,20 +1,218 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Loan, FD, and Mutual Fund Calculation</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Enter Loan and Investment Details</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <!-- Loan details -->
+        <ion-row>
+          <ion-col>
+            <ion-label>Loan Principal</ion-label>
+            <ion-input
+              [(ngModel)]="loanPrincipal"
+              type="number"
+              placeholder="Enter loan principal"
+            ></ion-input>
+          </ion-col>
+          <ion-col>
+            <ion-label>Annual Loan Interest Rate</ion-label>
+            <ion-input
+              [(ngModel)]="annualInterestRate"
+              type="number"
+              placeholder="Enter loan interest rate (%)"
+            ></ion-input>
+          </ion-col>
+        </ion-row>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+        <ion-row>
+          <ion-col>
+            <ion-label>Loan Tenure (Years)</ion-label>
+            <ion-input
+              [(ngModel)]="loanTenureYears"
+              type="number"
+              placeholder="Enter loan tenure in years"
+            ></ion-input>
+          </ion-col>
+          <!-- FD details -->
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-label>FD Principal</ion-label>
+            <ion-input
+              [(ngModel)]="fdPrincipal"
+              type="number"
+              placeholder="Enter FD principal"
+            ></ion-input>
+          </ion-col>
+
+          <ion-col>
+            <ion-label>FD Annual Interest Rate</ion-label>
+            <ion-input
+              [(ngModel)]="fdAnnualInterestRate"
+              type="number"
+              placeholder="Enter FD annual interest rate (%)"
+            ></ion-input>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <!-- Mutual Fund details -->
+          <ion-col>
+            <ion-label>MF Principal</ion-label>
+            <ion-input
+              [(ngModel)]="mfPrincipal"
+              type="number"
+              placeholder="Enter Mutual Fund principal"
+            ></ion-input>
+          </ion-col>
+          <ion-col>
+            <ion-label>MF Annual Interest Rate </ion-label>
+            <ion-input
+              [(ngModel)]="mfAnnualInterestRate"
+              type="number"
+              placeholder="Enter MF annual interest rate (%)"
+            ></ion-input>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <!-- Tax details -->
+          <ion-col>
+            <ion-label>Tax Rate</ion-label>
+            <ion-input
+              [(ngModel)]="taxRate"
+              type="number"
+              placeholder="Enter tax rate (%)"
+            ></ion-input>
+          </ion-col>
+        </ion-row>
+
+        <!-- Annual advance payment -->
+        <ion-row>
+          <ion-col>
+            <ion-label>Annual Advance Payment</ion-label>
+            <ion-input
+              [(ngModel)]="annualAdvancePayment"
+              type="number"
+              placeholder="Enter annual advance payment"
+            ></ion-input>
+          </ion-col>
+        </ion-row>
+
+        <!-- Button to calculate -->
+        <ion-row>
+          <ion-col>
+            <ion-button (click)="calculateEMI()">Calculate</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Display results -->
+  <ion-card *ngIf="emiList.length > 0">
+    <ion-card-header>
+      <ion-card-title>Loan Payment and Investment Summary</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <!-- Common Investment Details (Above Table) -->
+        <ion-row>
+          <ion-col>
+            <strong>FD Interest Before Tax (P.M):</strong>
+            {{ fdInterestBeforeTaxList[0] | currency: 'INR' }}
+          </ion-col>
+          <ion-col>
+            <strong>MF Interest Before Tax (P.M):</strong>
+            {{ mfInterestBeforeTaxList[0] | currency: 'INR' }}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <strong>FD Interest After Tax (P.M):</strong>
+            {{ fdInterestAfterTaxList[0].fdInterestAfterTax | currency: 'INR' }}
+          </ion-col>
+          <ion-col>
+            <strong>MF Interest After Tax (P.M):</strong>
+            {{ mfInterestAfterTaxList[0].mfInterestAfterTax | currency: 'INR' }}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <strong>Net Payment(EMI - FD + MF)(P.M)</strong>
+            {{ netPaymentList[0].netPayment | currency: 'INR' }}
+          </ion-col>
+          <ion-col>
+            <strong>Loan Tenure Completion:</strong>
+            {{ completionYear }} year(s)
+            <!-- Only show month if it's greater than 0 -->
+            <span *ngIf="completionMonth > 0"
+              >and {{ completionMonth }} month(s)</span
+            >
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <strong>Original Total Interest:</strong>
+            {{ formatCurrency(originalTotalInterest) }}
+          </ion-col>
+          <ion-col>
+            <strong>Paid Total Interest:</strong>
+            {{ formatCurrency(totalInterestPaid) }}
+          </ion-col>
+        </ion-row>
+     
+       
+        <ion-row>
+          <ion-col>
+            <strong>Total Advance Payment Made:</strong> {{
+            formatCurrency(totalAdvancePayment) }}
+          </ion-col>
+          <ion-col>
+            <strong
+              >Actual Savings (Interest Savings - Total Advance
+              Payment) & Savings in %:</strong
+            >
+            {{ formatCurrency(actualSavings) }} , {{actualSavingAfterRepayment}}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <strong>Interest Savings & Savings in %:</strong>
+            {{ formatCurrency(interestSavings) }}, {{ interestSavedPercentage }}
+          </ion-col>
+        </ion-row>
+        <!-- Table Headers (Sticky) -->
+        <ion-row class="sticky-header">
+          <ion-col><strong>Year</strong></ion-col>
+          <ion-col><strong>Month</strong></ion-col>
+          <ion-col><strong>EMI</strong></ion-col>
+          <ion-col><strong>Principal Paid</strong></ion-col>
+          <ion-col><strong>Interest Paid</strong></ion-col>
+        </ion-row>
+
+        <!-- Display EMI list with conditional row highlighting -->
+        <ion-row
+          *ngFor="let item of emiList; let i = index"
+          [ngClass]="{
+            'highlight-negative-payment': netPaymentList[i].netPayment < 0 && item.emi > 0,
+            'highlight-emizero': item.emi === 0
+          }"
+        >
+          <ion-col>{{ item.year }}</ion-col>
+          <ion-col>{{ item.month }}</ion-col>
+          <ion-col>{{ item.emi | currency: 'INR' }}</ion-col>
+          <ion-col>{{ principalPaidList[i] | currency: 'INR' }}</ion-col>
+          <ion-col>{{ interestPaidList[i] | currency: 'INR' }}</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

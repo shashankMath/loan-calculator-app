@@ -1,27 +1,42 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+/* Make the table headers sticky */
+.sticky-header {
+  position: sticky;
+  top: 0; /* Stick it at the top */
+  background-color: white; /* Add background for visibility */
+  z-index: 10; /* Ensure it stays above the content */
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+/* Add scrolling to the card content */
+ion-card-content {
+  max-height: 600px; /* Adjust height based on your preference */
+  overflow-y: auto; /* Make the content scrollable */
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-row {
+  display: flex;
+  align-items: center;
 }
 
-#container a {
-  text-decoration: none;
+ion-col {
+  padding: 0 10px; /* Optional: Add padding for better visual spacing */
+}
+
+ion-card {
+  margin-bottom: 10px;
+}
+
+ion-label {
+  font-weight: bold;
+}
+
+/* Assuming this is in your component's CSS file (home.page.scss) */
+.highlight-emizero {
+  background-color: rgb(205, 197, 197);
+  //background-color: rgb(57, 55, 55);
+  color: green;  /* or any color you choose */
+}
+
+.highlight-negative-payment {
+   /* Red background for negative net payment */
+  color: green;                 /* White text for contrast */
 }

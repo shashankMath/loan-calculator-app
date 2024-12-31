@@ -1,7 +1,10 @@
 {
   "name": "loan-calculator-app",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
   },
   "type": "angular"
 }
