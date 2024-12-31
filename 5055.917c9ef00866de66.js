@@ -210,7 +210,7 @@ function HomePage_ion_card_57_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](56);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](57, "i");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](58, "This will be the amount which will be saved due to advance repayment");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](58, "This will be the amount which will be saved due to advance repayment & %in saving with respect to actual total interest.");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](59, "ion-row", 11)(60, "ion-col", 12)(61, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](62, "Interest Savings & Savings in %:");
