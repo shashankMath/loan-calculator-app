@@ -114,26 +114,26 @@ function HomePage_ion_card_57_span_38_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("and ", ctx_r0.completionMonth, " month(s)");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" and ", ctx_r0.completionMonth, " month(s) ");
   }
 }
 function HomePage_ion_card_57_ion_row_78_Template(rf, ctx) {
   if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "ion-row", 13)(1, "ion-col");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "ion-row", 15)(1, "ion-col", 16);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "ion-col");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "ion-col", 16);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "ion-col");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "ion-col", 16);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](7, "currency");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](8, "ion-col");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](8, "ion-col", 17);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](9);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](10, "currency");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "ion-col");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "ion-col", 17);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](12);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](13, "currency");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
@@ -160,68 +160,68 @@ function HomePage_ion_card_57_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "ion-card")(1, "ion-card-header")(2, "ion-card-title");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](3, "Loan Payment and Investment Summary");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "ion-card-content")(5, "ion-grid")(6, "ion-row")(7, "ion-col")(8, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "ion-card-content")(5, "ion-grid")(6, "ion-row", 11)(7, "ion-col", 12)(8, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](9, "FD Interest Before Tax (P.M):");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](11, "currency");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](12, "ion-col")(13, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](12, "ion-col", 12)(13, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](14, "MF Interest Before Tax (P.M):");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](15);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](16, "currency");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](17, "ion-row")(18, "ion-col")(19, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](17, "ion-row", 11)(18, "ion-col", 12)(19, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "FD Interest After Tax (P.M):");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](22, "currency");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](23, "ion-col")(24, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](23, "ion-col", 12)(24, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "MF Interest After Tax (P.M):");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](27, "currency");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](28, "ion-row")(29, "ion-col")(30, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Net Payment(EMI - FD + MF)(P.M)");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](28, "ion-row", 11)(29, "ion-col", 12)(30, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Net Payment(EMI - FD + MF)(P.M):");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](33, "currency");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](34, "ion-col")(35, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](34, "ion-col", 12)(35, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](36, "Loan Tenure Completion:");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](37);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](38, HomePage_ion_card_57_span_38_Template, 2, 1, "span", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](39, "ion-row")(40, "ion-col")(41, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](39, "ion-row", 11)(40, "ion-col", 12)(41, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](42, "Original Total Interest:");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](43);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](44, "ion-col")(45, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](44, "ion-col", 12)(45, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](46, "Paid Total Interest:");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](47);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](48, "ion-row")(49, "ion-col")(50, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](48, "ion-row", 11)(49, "ion-col", 12)(50, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](51, "Total Advance Payment Made:");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](52);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](53, "ion-col")(54, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](53, "ion-col", 12)(54, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](55, "Actual Savings (Interest Savings - Total Advance Payment) & Savings in %:");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](56);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](57, "ion-row")(58, "ion-col")(59, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](57, "ion-row", 11)(58, "ion-col", 12)(59, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](60, "Interest Savings & Savings in %:");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](61);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](62, "ion-row", 11)(63, "ion-col")(64, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](62, "ion-row", 13)(63, "ion-col")(64, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](65, "Year");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](66, "ion-col")(67, "strong");
@@ -236,7 +236,7 @@ function HomePage_ion_card_57_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](75, "ion-col")(76, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](77, "Interest Paid");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](78, HomePage_ion_card_57_ion_row_78_Template, 14, 18, "ion-row", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](78, HomePage_ion_card_57_ion_row_78_Template, 14, 18, "ion-row", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
   }
   if (rf & 2) {
@@ -262,7 +262,7 @@ function HomePage_ion_card_57_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", ctx_r0.formatCurrency(ctx_r0.totalAdvancePayment), " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate2"](" ", ctx_r0.formatCurrency(ctx_r0.actualSavings), " , ", ctx_r0.actualSavingAfterRepayment, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate2"](" ", ctx_r0.formatCurrency(ctx_r0.actualSavings), ", ", ctx_r0.actualSavingAfterRepayment, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate2"](" ", ctx_r0.formatCurrency(ctx_r0.interestSavings), ", ", ctx_r0.interestSavedPercentage, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](17);
@@ -472,7 +472,7 @@ _HomePage.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵd
   selectors: [["app-home"]],
   decls: 58,
   vars: 10,
-  consts: [["type", "number", "placeholder", "Enter loan principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter loan interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter loan tenure in years", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter FD principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter FD annual interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter Mutual Fund principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter MF annual interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter tax rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter annual advance payment", 3, "ngModelChange", "ngModel"], [3, "click"], [4, "ngIf"], [1, "sticky-header"], [3, "ngClass", 4, "ngFor", "ngForOf"], [3, "ngClass"]],
+  consts: [["type", "number", "placeholder", "Enter loan principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter loan interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter loan tenure in years", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter FD principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter FD annual interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter Mutual Fund principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter MF annual interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter tax rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter annual advance payment", 3, "ngModelChange", "ngModel"], [3, "click"], [4, "ngIf"], [1, "ion-margin-bottom"], ["size", "12", "size-md", "6"], [1, "sticky-header", "ion-margin-bottom"], ["class", "ion-margin-bottom", 3, "ngClass", 4, "ngFor", "ngForOf"], [1, "ion-margin-bottom", 3, "ngClass"], ["size", "12", "size-md", "2"], ["size", "12", "size-md", "3"]],
   template: function HomePage_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "ion-header")(1, "ion-toolbar")(2, "ion-title");
