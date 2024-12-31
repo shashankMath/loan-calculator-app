@@ -402,8 +402,8 @@ class HomePage {
     this.interestSavings = this.originalTotalInterest - this.totalInterestPaid;
     this.interestSavedPercentage = ((this.originalTotalInterest - this.totalInterestPaid) / this.originalTotalInterest * 100).toFixed(2);
     // Calculate Actual Savings
-    this.actualSavings = this.interestSavings - this.totalAdvancePayment;
-    const savingAfterRepayment = (this.interestSavings - this.totalAdvancePayment) / this.originalTotalInterest * 100;
+    this.actualSavings = this.totalAdvancePayment - this.interestSavings;
+    const savingAfterRepayment = (this.totalAdvancePayment - this.interestSavings) / this.originalTotalInterest * 100;
     this.actualSavingAfterRepayment = savingAfterRepayment.toFixed(2);
     // Check if actual savings are more than total advance payments
     if (savingAfterRepayment < 0) {
