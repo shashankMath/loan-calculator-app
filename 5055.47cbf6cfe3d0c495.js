@@ -223,10 +223,9 @@ function HomePage_ion_card_57_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](57, ":");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](58);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](59, "i");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](60, "This will inclusive of Total EMI(s) & Advance Payment done over the years.");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](61, "ion-row", 11)(62, "ion-col", 12)(63, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](64, "Interest Savings & Savings in %:");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
