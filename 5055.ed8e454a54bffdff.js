@@ -272,6 +272,8 @@ class HomePage {
     } else {
       avgInterestAmtForRemainingTenure = 0;
     }
+    const avgMonthlyInterest = this.interestSavings / remainingMonths;
+    const avgYearly = avgMonthlyInterest * 12;
     // Set the message to display in the HTML, highlighting the amounts in green
     let message = '';
     if (this.interestSavings > 0) {
@@ -284,8 +286,8 @@ class HomePage {
         <p style="font-size: 16px; line-height: 1.6; color: #333;">Your savings span a total of <strong style="color: green;">${remainingYears} year(s) ${remainingMonthsInYear > 0 ? `,${remainingMonthsInYear} month(s)` : ''} (OR) ${remainingMonths} month(s)</strong>.</p>
         <p style="font-size: 16px; line-height: 1.6; color: #333;">That means you would save:</p>
         <ul style="font-size: 16px; line-height: 1.6; color: #333;">
-          <li><strong style="color: #4CAF50;">Average Monthly:</strong> ${this.formatCurrency(this.interestSavings / (this.completionYear * 12))} in interest.</li>
-          <li><strong style="color: #4CAF50;">Average Annually:</strong> ${this.formatCurrency(this.interestSavings / this.completionYear)} in interest.</li>
+          <li><strong style="color: #4CAF50;">Average Monthly:</strong> ${this.formatCurrency(avgMonthlyInterest)} in interest.</li>
+          <li><strong style="color: #4CAF50;">Average Annually:</strong> ${this.formatCurrency(avgYearly)} in interest.</li>
         </ul>
         <p style="font-size: 16px; line-height: 1.6; color: #333;">This means that your payments will be significantly reduced over time!</p>
         <p style="font-size: 16px; line-height: 1.6; color: #333;">Keep up the great work on managing your finances!</p>
