@@ -320,6 +320,7 @@ class HomePage {
         <p style="font-size: 14px; line-height: 1.6; color: #666; font-style: italic;">This includes all Total EMI(s) & Advance Payments made over the years.</p>
       </div>
     `;
+    this.interestMessage = this.sanitizer.bypassSecurityTrustHtml(message);
   }
   // Helper function to toggle visibility of columns
   togglePrincipalPaid() {
