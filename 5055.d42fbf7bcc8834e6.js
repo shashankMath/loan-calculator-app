@@ -87,11 +87,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   HomePage: () => (/* binding */ HomePage)
 /* harmony export */ });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 177);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ 9417);
-/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ 4474);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ 177);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ 9417);
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ 4474);
 /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jspdf */ 9223);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 7705);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ 345);
 var _HomePage;
 
 
@@ -101,187 +102,9 @@ var _HomePage;
 
 
 
-const _c0 = (a0, a1) => ({
-  "highlight-negative-payment": a0,
-  "highlight-emizero": a1
-});
-function HomePage_ion_card_57_span_38_Template(rf, ctx) {
-  if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "span");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-  }
-  if (rf & 2) {
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" and ", ctx_r0.completionMonth, " month(s) ");
-  }
-}
-function HomePage_ion_card_57_span_56_Template(rf, ctx) {
-  if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "span");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-  }
-  if (rf & 2) {
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" & ", ctx_r0.completionMonth, " month(s)");
-  }
-}
-function HomePage_ion_card_57_ion_row_79_Template(rf, ctx) {
-  if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "ion-row", 15)(1, "ion-col");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "ion-col");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "ion-col");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](7, "currency");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](8, "ion-col");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](10, "currency");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-  }
-  if (rf & 2) {
-    const item_r2 = ctx.$implicit;
-    const i_r3 = ctx.index;
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction2"](11, _c0, ctx_r0.netPaymentList[i_r3].netPayment < 0 && item_r2.emi > 0, item_r2.emi === 0));
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](item_r2.year);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](item_r2.month);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](7, 5, ctx_r0.principalPaidList[i_r3], "INR"));
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](10, 8, ctx_r0.interestPaidList[i_r3], "INR"));
-  }
-}
-function HomePage_ion_card_57_Template(rf, ctx) {
-  if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "ion-card")(1, "ion-card-header")(2, "ion-card-title");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](3, "Loan Payment and Investment Summary");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "ion-card-content")(5, "ion-grid")(6, "ion-row", 11)(7, "ion-col", 12)(8, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](9, "FD Interest Before Tax (P.M):");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](11, "currency");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](12, "ion-col", 12)(13, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](14, "MF Interest Before Tax (P.M):");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](15);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](16, "currency");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](17, "ion-row", 11)(18, "ion-col", 12)(19, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "FD Interest After Tax (P.M):");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](22, "currency");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](23, "ion-col", 12)(24, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "MF Interest After Tax (P.M):");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](27, "currency");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](28, "ion-row", 11)(29, "ion-col", 12)(30, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Net Payment(EMI - FD + MF)(P.M):");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](33, "currency");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](34, "ion-col", 12)(35, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](36, "Loan Tenure Completion:");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](37);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](38, HomePage_ion_card_57_span_38_Template, 2, 1, "span", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](39, "ion-row", 11)(40, "ion-col", 12)(41, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](42, "Original Total Interest:");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](43);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](44, "ion-col", 12)(45, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](46, "Paid Total Interest:");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](47);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](48, "ion-row", 11)(49, "ion-col", 12)(50, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](51, "Total Advance Payment Made:");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](52);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](53, "ion-col", 12)(54, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](55);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](56, HomePage_ion_card_57_span_56_Template, 2, 1, "span", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](57, ":");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](58);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](59, "i");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](60, "This will inclusive of Total EMI(s) & Advance Payment done over the years.");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](61, "ion-row", 11)(62, "ion-col", 12)(63, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](64, "Interest Savings & Savings in %:");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](65);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](66, "ion-row", 13)(67, "ion-col")(68, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](69, "Year");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](70, "ion-col")(71, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](72, "Month");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](73, "ion-col")(74, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](75, "Principal Paid");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](76, "ion-col")(77, "strong");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](78, "Interest Paid");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](79, HomePage_ion_card_57_ion_row_79_Template, 11, 14, "ion-row", 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
-  }
-  if (rf & 2) {
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](11, 16, ctx_r0.fdInterestBeforeTaxList[0], "INR"), " ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](16, 19, ctx_r0.mfInterestBeforeTaxList[0], "INR"), " ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](22, 22, ctx_r0.fdInterestAfterTaxList[0].fdInterestAfterTax, "INR"), " ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](27, 25, ctx_r0.mfInterestAfterTaxList[0].mfInterestAfterTax, "INR"), " ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](33, 28, ctx_r0.netPaymentList[0].netPayment, "INR"), " ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", ctx_r0.completionYear, " year(s) ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r0.completionMonth > 0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", ctx_r0.formatCurrency(ctx_r0.originalTotalInterest), " ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", ctx_r0.formatCurrency(ctx_r0.totalInterestPaid), " ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", ctx_r0.formatCurrency(ctx_r0.totalAdvancePayment), " ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"]("Total Payment Made Till End of ", ctx_r0.completionYear, " year(s) ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r0.completionMonth > 0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", ctx_r0.formatCurrency(ctx_r0.totalPaymentMadeTillDate), " ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate2"](" ", ctx_r0.formatCurrency(ctx_r0.interestSavings), ", ", ctx_r0.interestSavedPercentage, " ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r0.emiList);
-  }
-}
 class HomePage {
-  constructor() {
+  constructor(sanitizer) {
+    this.sanitizer = sanitizer;
     // Input values for loan, FD, MF, and tax (user enters values directly as percentages)
     this.loanPrincipal = 10000000;
     this.annualInterestRate = 8.65;
@@ -292,6 +115,11 @@ class HomePage {
     this.mfAnnualInterestRate = 12;
     this.taxRate = 30;
     this.annualAdvancePayment = 500000; // Prepayment amount
+    this.fdInterestBeforeTaxPerMonth = 0;
+    this.mfInterestBeforeTaxPerMonth = 0;
+    this.fdInterestAfterTaxPerMonth = 0;
+    this.mfInterestAfterTaxPerMonth = 0;
+    this.netPaymentPerMonth = 0;
     // Output arrays for tracking values
     this.emiPayment = 0;
     this.emiList = [];
@@ -321,9 +149,11 @@ class HomePage {
     this.actualSavingAfterRepayment = '';
     this.totalPaymentMadeTillDate = 0;
     this.totalPrincipalPaid = 0;
+    this.interestMessage = '';
   }
   // Function to calculate EMI and break it down
   calculateEMI() {
+    var _this$fdInterestAfter, _this$mfInterestAfter, _this$netPaymentList;
     const monthlyInterestRate = this.annualInterestRate / 12 / 100;
     const totalMonths = this.loanTenureYears * 12;
     // EMI Calculation (fixed EMI for the reducing balance method)
@@ -364,7 +194,7 @@ class HomePage {
         month,
         remainingPrincipal: Math.max(remainingPrincipal, 0)
       });
-      // Generate FD and MF interest after tax and net payments
+      // Generate FD and MF interest before and after tax
       const fdInterest = this.fdPrincipal * (this.fdAnnualInterestRate / 100 / 12);
       const mfInterest = this.mfPrincipal * (this.mfAnnualInterestRate / 100 / 12);
       const fdInterestAfterTax = fdInterest * (1 - this.taxRate / 100);
@@ -402,12 +232,19 @@ class HomePage {
     this.totalAdvancePayment = this.annualAdvancePayment * this.completionYear;
     this.totalPaymentMadeTillDate = this.emiList.reduce((accum, current) => accum + current.emi, 0) + this.totalAdvancePayment;
     this.totalPrincipalPaid = this.principalPaidList.reduce((accum, current) => accum + current, 0);
+    // Summary variables for display
+    this.fdInterestBeforeTaxPerMonth = this.fdInterestBeforeTaxList[this.fdInterestBeforeTaxList.length - 1];
+    this.mfInterestBeforeTaxPerMonth = this.mfInterestBeforeTaxList[this.mfInterestBeforeTaxList.length - 1];
+    this.fdInterestAfterTaxPerMonth = (_this$fdInterestAfter = this.fdInterestAfterTaxList[this.fdInterestAfterTaxList.length - 1]) === null || _this$fdInterestAfter === void 0 ? void 0 : _this$fdInterestAfter.fdInterestAfterTax;
+    this.mfInterestAfterTaxPerMonth = (_this$mfInterestAfter = this.mfInterestAfterTaxList[this.mfInterestAfterTaxList.length - 1]) === null || _this$mfInterestAfter === void 0 ? void 0 : _this$mfInterestAfter.mfInterestAfterTax;
+    this.netPaymentPerMonth = (_this$netPaymentList = this.netPaymentList[this.netPaymentList.length - 1]) === null || _this$netPaymentList === void 0 ? void 0 : _this$netPaymentList.netPayment;
     // Call the function to calculate interest savings after EMI calculation
     this.calculateInterestSavings();
   }
   calculateInterestSavings() {
     const totalMonths = this.loanTenureYears * 12;
     const monthlyInterestRate = this.annualInterestRate / 12 / 100;
+    let avgInterestAmtForRemainingTenure = 0;
     // Original EMI calculation (fixed for the entire loan tenure)
     const originalEMI = this.loanPrincipal * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, totalMonths) / (Math.pow(1 + monthlyInterestRate, totalMonths) - 1);
     let originalRemainingPrincipal = this.loanPrincipal;
@@ -422,15 +259,58 @@ class HomePage {
     // Store the results for both original and reduced interest
     this.originalTotalInterest = originalTotalInterest;
     this.interestSavings = this.originalTotalInterest - this.totalInterestPaid;
+    // Calculate the percentage savings
     this.interestSavedPercentage = ((this.originalTotalInterest - this.totalInterestPaid) / this.originalTotalInterest * 100).toFixed(2);
-    // Calculate Actual Savings
-    //this.actualSavings = this.totalAdvancePayment - this.interestSavings;
-    //const savingAfterRepayment = ((this.actualSavings) / this.originalTotalInterest * 100);
-    //this.actualSavingAfterRepayment = (savingAfterRepayment).toFixed(2);
-    // Check if actual savings are more than total advance payments
+    // Calculate the remaining months after considering the advance payments
+    const remainingMonths = totalMonths - (this.completionYear * 12 + this.completionMonth);
+    // Calculate the average interest per month for the remaining tenure
+    if (remainingMonths > 0) {
+      avgInterestAmtForRemainingTenure = this.interestSavings / remainingMonths;
+    } else {
+      avgInterestAmtForRemainingTenure = 0;
+    }
+    // Calculate the annual equivalent of the average interest payment
+    const avgAnnualInterest = avgInterestAmtForRemainingTenure * 12;
+    // Calculate how many years the savings would have been equivalent to
+    const equivalentYears = this.interestSavings / avgAnnualInterest;
+    // Set the message to display in the HTML, highlighting the amounts in green
     if (this.interestSavings > 0) {
-      //Show message to user indicating reconsideration is needed
-      alert(`You have saved ${this.interestSavedPercentage}% from total interest.`);
+      this.interestMessage = this.sanitizer.bypassSecurityTrustHtml(`
+        <div class="interest-message" style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); max-width: 600px;">
+          <h3 style="text-align: center; color: #4CAF50;">Interest Savings Summary</h3>
+          
+          <p style="font-size: 16px; line-height: 1.6; color: #333;">You've saved a total of <strong style="color: green;">${this.formatCurrency(this.interestSavings)}</strong> in interest.</p>
+          <p style="font-size: 16px; line-height: 1.6; color: #333;">This represents a savings of <strong style="color: green;">${this.interestSavedPercentage}%</strong> compared to your original loan payments.</p>
+          <p style="font-size: 16px; line-height: 1.6; color: #333;">Your savings span a total of <strong style="color: green;">${equivalentYears.toFixed(2)} year(s) (OR) ${remainingMonths} month(s)</strong>.</p>
+          
+          <p style="font-size: 16px; line-height: 1.6; color: #333;">That means you would save:</p>
+          <ul style="font-size: 16px; line-height: 1.6; color: #333;">
+            <li><strong style="color: #4CAF50;">Monthly:</strong> ${this.formatCurrency(avgInterestAmtForRemainingTenure)} in interest.</li>
+            <li><strong style="color: #4CAF50;">Annually:</strong> ${this.formatCurrency(avgAnnualInterest)} in interest.</li>
+          </ul>
+          
+          <p style="font-size: 16px; line-height: 1.6; color: #333;">This means that your payments will be significantly reduced over time!</p>
+          <p style="font-size: 16px; line-height: 1.6; color: #333;">Keep up the great work on managing your finances!</p>
+          
+          <h4 style="color: #4CAF50;">Loan and Investment Breakdown:</h4>
+               <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>EMI</strong> ${this.formatCurrency(this.emiPayment)}</p>
+          <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>FD Interest Before Tax (P.M):</strong> ${this.formatCurrency(this.fdInterestBeforeTaxPerMonth)}</p>
+          <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>MF Interest Before Tax (P.M):</strong> ${this.formatCurrency(this.mfInterestBeforeTaxPerMonth)}</p>
+          <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>FD Interest After Tax (P.M):</strong> ${this.formatCurrency(this.fdInterestAfterTaxPerMonth)}</p>
+          <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>MF Interest After Tax (P.M):</strong> ${this.formatCurrency(this.mfInterestAfterTaxPerMonth)}</p>
+          <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>Net Payment(EMI - FD + MF)(P.M):</strong> ${this.formatCurrency(this.netPaymentPerMonth)}</p>
+          
+          <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>Loan Tenure Completion:</strong> ${this.completionYear} year(s)</p>
+          <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>Original Total Interest:</strong> ${this.formatCurrency(this.originalTotalInterest)}</p>
+          <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>Paid Total Interest:</strong> ${this.formatCurrency(this.totalInterestPaid)}</p>
+          
+          <!-- Additional Total Payment Details -->
+          <h4 style="color: #4CAF50;">Total Payment Summary:</h4>
+          <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>Total Advance Payment Made:</strong> ${this.formatCurrency(this.totalAdvancePayment)}</p>
+          <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>Total Payment Made Till End of ${this.completionYear} year(s):</strong> ${this.formatCurrency(this.totalPaymentMadeTillDate)}</p>
+          <p style="font-size: 14px; line-height: 1.6; color: #666; font-style: italic;">This includes all Total EMI(s) & Advance Payments made over the years.</p>
+        </div>
+      `);
     }
   }
   // Helper function to toggle visibility of columns
@@ -477,14 +357,14 @@ class HomePage {
 }
 _HomePage = HomePage;
 _HomePage.ɵfac = function HomePage_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _HomePage)();
+  return new (__ngFactoryType__ || _HomePage)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__.DomSanitizer));
 };
 _HomePage.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
   type: _HomePage,
   selectors: [["app-home"]],
-  decls: 58,
+  decls: 59,
   vars: 10,
-  consts: [["type", "number", "placeholder", "Enter loan principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter loan interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter loan tenure in years", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter FD principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter FD annual interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter Mutual Fund principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter MF annual interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter tax rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter annual advance payment", 3, "ngModelChange", "ngModel"], [3, "click"], [4, "ngIf"], [1, "ion-margin-bottom"], ["size", "12", "size-md", "6"], [1, "sticky-header", "ion-margin-bottom"], ["class", "ion-margin-bottom", 3, "ngClass", 4, "ngFor", "ngForOf"], [1, "ion-margin-bottom", 3, "ngClass"]],
+  consts: [["type", "number", "placeholder", "Enter loan principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter loan interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter loan tenure in years", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter FD principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter FD annual interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter Mutual Fund principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter MF annual interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter tax rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter annual advance payment", 3, "ngModelChange", "ngModel"], [3, "click"], [3, "innerHTML"]],
   template: function HomePage_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "ion-header")(1, "ion-toolbar")(2, "ion-title");
@@ -580,8 +460,9 @@ _HomePage.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵd
       });
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](56, "Calculate");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](57, HomePage_ion_card_57_Template, 80, 31, "ion-card", 10);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](57, "ion-card");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](58, "div", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
     }
     if (rf & 2) {
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](15);
@@ -602,12 +483,12 @@ _HomePage.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵd
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.taxRate);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.annualAdvancePayment);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.emiList.length > 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("innerHTML", ctx.interestMessage, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeHtml"]);
     }
   },
-  dependencies: [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__.IonicModule, _ionic_angular__WEBPACK_IMPORTED_MODULE_2__.IonButton, _ionic_angular__WEBPACK_IMPORTED_MODULE_2__.IonCard, _ionic_angular__WEBPACK_IMPORTED_MODULE_2__.IonCardContent, _ionic_angular__WEBPACK_IMPORTED_MODULE_2__.IonCardHeader, _ionic_angular__WEBPACK_IMPORTED_MODULE_2__.IonCardTitle, _ionic_angular__WEBPACK_IMPORTED_MODULE_2__.IonCol, _ionic_angular__WEBPACK_IMPORTED_MODULE_2__.IonContent, _ionic_angular__WEBPACK_IMPORTED_MODULE_2__.IonGrid, _ionic_angular__WEBPACK_IMPORTED_MODULE_2__.IonHeader, _ionic_angular__WEBPACK_IMPORTED_MODULE_2__.IonInput, _ionic_angular__WEBPACK_IMPORTED_MODULE_2__.IonLabel, _ionic_angular__WEBPACK_IMPORTED_MODULE_2__.IonRow, _ionic_angular__WEBPACK_IMPORTED_MODULE_2__.IonTitle, _ionic_angular__WEBPACK_IMPORTED_MODULE_2__.IonToolbar, _ionic_angular__WEBPACK_IMPORTED_MODULE_2__.NumericValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgModel, _angular_common__WEBPACK_IMPORTED_MODULE_4__.CommonModule, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_4__.CurrencyPipe],
-  styles: ["\n\n.sticky-header[_ngcontent-%COMP%] {\n  position: sticky;\n  top: 0; \n\n  background-color: white; \n\n  z-index: 10; \n\n}\n\n\n\nion-card-content[_ngcontent-%COMP%] {\n  max-height: 600px; \n\n  overflow-y: auto; \n\n}\n\nion-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n}\n\nion-col[_ngcontent-%COMP%] {\n  padding: 0 10px; \n\n}\n\nion-card[_ngcontent-%COMP%] {\n  margin-bottom: 10px;\n}\n\nion-label[_ngcontent-%COMP%] {\n  font-weight: bold;\n}\n\n\n\n.highlight-emizero[_ngcontent-%COMP%] {\n  background-color: rgb(205, 197, 197);\n  color: green; \n\n}\n\n.highlight-negative-payment[_ngcontent-%COMP%] {\n  \n\n  color: green; \n\n}"]
+  dependencies: [_ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonicModule, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonButton, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonCard, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonCardContent, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonCardHeader, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonCardTitle, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonCol, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonContent, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonGrid, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonHeader, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonInput, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonLabel, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonRow, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonTitle, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonToolbar, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.NumericValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgModel, _angular_common__WEBPACK_IMPORTED_MODULE_5__.CommonModule],
+  styles: ["\n\n.sticky-header[_ngcontent-%COMP%] {\n  position: sticky;\n  top: 0; \n\n  background-color: white; \n\n  z-index: 10; \n\n}\n\n\n\nion-card-content[_ngcontent-%COMP%] {\n  max-height: 600px; \n\n  overflow-y: auto; \n\n}\n\nion-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n}\n\nion-col[_ngcontent-%COMP%] {\n  padding: 0 10px; \n\n}\n\nion-card[_ngcontent-%COMP%] {\n  margin-bottom: 10px;\n}\n\nion-label[_ngcontent-%COMP%] {\n  font-weight: bold;\n}\n\n\n\n.highlight-emizero[_ngcontent-%COMP%] {\n  background-color: rgb(205, 197, 197);\n  color: green; \n\n}\n\n.highlight-negative-payment[_ngcontent-%COMP%] {\n  \n\n  color: green; \n\n}\n\n\n\n.interest-message[_ngcontent-%COMP%] {\n  padding: 20px;\n  border: 1px solid #dcdcdc;\n  border-radius: 8px;\n  background-color: #f9f9f9;\n}\n\n.interest-message[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #2c3e50;\n  text-align: center;\n  font-size: 18px;\n}\n\n.interest-message[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  font-size: 16px;\n  color: #34495e;\n}\n\n.interest-message[_ngcontent-%COMP%]   strong[_ngcontent-%COMP%] {\n  color: green;\n}"]
 });
 
 /***/ }),
