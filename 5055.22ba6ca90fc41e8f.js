@@ -285,8 +285,8 @@ class HomePage {
           
           <p style="font-size: 16px; line-height: 1.6; color: #333;">That means you would save:</p>
           <ul style="font-size: 16px; line-height: 1.6; color: #333;">
-            <li><strong style="color: #4CAF50;">Monthly:</strong> ${this.formatCurrency(avgInterestAmtForRemainingTenure)} in interest.</li>
-            <li><strong style="color: #4CAF50;">Annually:</strong> ${this.formatCurrency(avgAnnualInterest)} in interest.</li>
+            <li><strong style="color: #4CAF50;">Average Monthly:</strong> ${this.formatCurrency(avgInterestAmtForRemainingTenure)} in interest.</li>
+            <li><strong style="color: #4CAF50;">Average Annually:</strong> ${this.formatCurrency(avgAnnualInterest)} in interest.</li>
           </ul>
           
           <p style="font-size: 16px; line-height: 1.6; color: #333;">This means that your payments will be significantly reduced over time!</p>
