@@ -265,19 +265,13 @@ class HomePage {
     const remainingMonths = totalMonths - (this.completionYear * 12 + this.completionMonth);
     // Calculate years from the remaining months
     const remainingYears = Math.floor(remainingMonths / 12);
+    const remainingMonthsInYear = remainingYears % 12;
     // Calculate the average interest per month for the remaining tenure
     if (remainingMonths > 0) {
       avgInterestAmtForRemainingTenure = this.interestSavings / remainingMonths;
     } else {
       avgInterestAmtForRemainingTenure = 0;
     }
-    // Calculate the annual equivalent of the average interest payment
-    const avgAnnualInterest = avgInterestAmtForRemainingTenure * 12;
-    // Calculate how many years the savings would have been equivalent to
-    const equivalentYears = this.interestSavings / avgAnnualInterest;
-    const totalInterestPaidPerMonth = this.totalInterestPaid / (this.completionYear * 12); // Assuming you have the total interest paid over the full tenure
-    // Number of years of savings based on the total savings
-    const yearsSavings = this.interestSavings / totalInterestPaidPerMonth / 12; // Convert to years
     // Set the message to display in the HTML, highlighting the amounts in green
     let message = '';
     if (this.interestSavings > 0) {
@@ -287,7 +281,7 @@ class HomePage {
         <h3 style="text-align: center; color: #4CAF50;">Interest Savings Summary</h3>
         <p style="font-size: 16px; line-height: 1.6; color: #333;">You've saved a total of <strong style="color: green;">${this.formatCurrency(this.interestSavings)}</strong> in interest.</p>
         <p style="font-size: 16px; line-height: 1.6; color: #333;">This represents a savings of <strong style="color: green;">${this.interestSavedPercentage}%</strong> compared to your original loan payments.</p>
-        <p style="font-size: 16px; line-height: 1.6; color: #333;">Your savings span a total of <strong style="color: green;">${remainingYears} year(s) (OR) ${remainingMonths} month(s)</strong>.</p>
+        <p style="font-size: 16px; line-height: 1.6; color: #333;">Your savings span a total of <strong style="color: green;">${remainingYears} year(s) ${remainingMonthsInYear > 0 ? `and ${remainingMonthsInYear} month(s)` : ''} (OR) ${remainingMonths} month(s)</strong>.</p>
         <p style="font-size: 16px; line-height: 1.6; color: #333;">That means you would save:</p>
         <ul style="font-size: 16px; line-height: 1.6; color: #333;">
           <li><strong style="color: #4CAF50;">Average Monthly:</strong> ${this.formatCurrency(this.interestSavings / (this.completionYear * 12))} in interest.</li>
