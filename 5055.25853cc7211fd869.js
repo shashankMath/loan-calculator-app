@@ -102,6 +102,67 @@ var _HomePage;
 
 
 
+
+const _c0 = (a0, a1) => ({
+  "highlight-negative-payment": a0,
+  "highlight-emizero": a1
+});
+function HomePage_ion_card_59_ion_row_14_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "ion-row", 14)(1, "ion-col");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "ion-col");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](5, "currency");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "ion-col");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](8, "currency");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "ion-col");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](11, "currency");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const item_r1 = ctx.$implicit;
+    const i_r2 = ctx.index;
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction2"](15, _c0, ctx_r2.netPaymentList[i_r2].netPayment < 0 && item_r1.emi > 0, item_r1.emi === 0));
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate2"]("", item_r1.year, "(", item_r1.month, ")");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](5, 6, item_r1.emi, "INR"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](8, 9, ctx_r2.principalPaidList[i_r2], "INR"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](11, 12, ctx_r2.interestPaidList[i_r2], "INR"));
+  }
+}
+function HomePage_ion_card_59_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "ion-card")(1, "ion-row", 12)(2, "ion-col")(3, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4, "Year(Months)");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "ion-col")(6, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](7, "EMI");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](8, "ion-col")(9, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](10, "Principal Paid");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "ion-col")(12, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](13, "Interest Paid");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](14, HomePage_ion_card_59_ion_row_14_Template, 12, 18, "ion-row", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r2.emiList);
+  }
+}
 class HomePage {
   constructor(sanitizer) {
     this.sanitizer = sanitizer;
@@ -381,9 +442,9 @@ _HomePage.ɵfac = function HomePage_Factory(__ngFactoryType__) {
 _HomePage.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
   type: _HomePage,
   selectors: [["app-home"]],
-  decls: 59,
-  vars: 10,
-  consts: [["type", "number", "placeholder", "Enter loan principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter loan interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter loan tenure in years", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter FD principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter FD annual interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter Mutual Fund principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter MF annual interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter tax rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter annual advance payment", 3, "ngModelChange", "ngModel"], [3, "click"], [3, "innerHTML"]],
+  decls: 60,
+  vars: 11,
+  consts: [["type", "number", "placeholder", "Enter loan principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter loan interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter loan tenure in years", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter FD principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter FD annual interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter Mutual Fund principal", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter MF annual interest rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter tax rate (%)", 3, "ngModelChange", "ngModel"], ["type", "number", "placeholder", "Enter annual advance payment", 3, "ngModelChange", "ngModel"], [3, "click"], [3, "innerHTML"], [4, "ngIf"], [1, "sticky-header"], [3, "ngClass", 4, "ngFor", "ngForOf"], [3, "ngClass"]],
   template: function HomePage_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "ion-header")(1, "ion-toolbar")(2, "ion-title");
@@ -481,7 +542,9 @@ _HomePage.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵd
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()()();
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](57, "ion-card");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](58, "div", 10);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](59, HomePage_ion_card_59_Template, 15, 1, "ion-card", 11);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     }
     if (rf & 2) {
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](15);
@@ -504,9 +567,11 @@ _HomePage.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵd
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtwoWayProperty"]("ngModel", ctx.annualAdvancePayment);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("innerHTML", ctx.interestMessage, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeHtml"]);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.emiList.length > 0);
     }
   },
-  dependencies: [_ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonicModule, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonButton, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonCard, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonCardContent, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonCardHeader, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonCardTitle, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonCol, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonContent, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonGrid, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonHeader, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonInput, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonLabel, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonRow, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonTitle, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonToolbar, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.NumericValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgModel, _angular_common__WEBPACK_IMPORTED_MODULE_5__.CommonModule],
+  dependencies: [_ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonicModule, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonButton, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonCard, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonCardContent, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonCardHeader, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonCardTitle, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonCol, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonContent, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonGrid, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonHeader, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonInput, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonLabel, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonRow, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonTitle, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.IonToolbar, _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.NumericValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgModel, _angular_common__WEBPACK_IMPORTED_MODULE_5__.CommonModule, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_5__.CurrencyPipe],
   styles: ["\n\n.sticky-header[_ngcontent-%COMP%] {\n  position: sticky;\n  top: 0; \n\n  background-color: white; \n\n  z-index: 10; \n\n}\n\n\n\nion-card-content[_ngcontent-%COMP%] {\n  max-height: 600px; \n\n  overflow-y: auto; \n\n}\n\nion-row[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n}\n\nion-col[_ngcontent-%COMP%] {\n  padding: 0 10px; \n\n}\n\nion-card[_ngcontent-%COMP%] {\n  margin-bottom: 10px;\n}\n\nion-label[_ngcontent-%COMP%] {\n  font-weight: bold;\n}\n\n\n\n.highlight-emizero[_ngcontent-%COMP%] {\n  background-color: rgb(205, 197, 197);\n  color: green; \n\n}\n\n.highlight-negative-payment[_ngcontent-%COMP%] {\n  \n\n  color: green; \n\n}\n\n\n\n.interest-message[_ngcontent-%COMP%] {\n  padding: 20px;\n  border: 1px solid #dcdcdc;\n  border-radius: 8px;\n  background-color: #f9f9f9;\n}\n\n.interest-message[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #2c3e50;\n  text-align: center;\n  font-size: 18px;\n}\n\n.interest-message[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  font-size: 16px;\n  color: #34495e;\n}\n\n.interest-message[_ngcontent-%COMP%]   strong[_ngcontent-%COMP%] {\n  color: green;\n}"]
 });
 
