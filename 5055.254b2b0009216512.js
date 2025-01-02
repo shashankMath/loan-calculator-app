@@ -263,6 +263,8 @@ class HomePage {
     this.interestSavedPercentage = ((this.originalTotalInterest - this.totalInterestPaid) / this.originalTotalInterest * 100).toFixed(2);
     // Calculate the remaining months after considering the advance payments
     const remainingMonths = totalMonths - (this.completionYear * 12 + this.completionMonth);
+    // Calculate years from the remaining months
+    const remainingYears = Math.floor(remainingMonths / 12);
     // Calculate the average interest per month for the remaining tenure
     if (remainingMonths > 0) {
       avgInterestAmtForRemainingTenure = this.interestSavings / remainingMonths;
@@ -273,19 +275,23 @@ class HomePage {
     const avgAnnualInterest = avgInterestAmtForRemainingTenure * 12;
     // Calculate how many years the savings would have been equivalent to
     const equivalentYears = this.interestSavings / avgAnnualInterest;
+    const totalInterestPaidPerMonth = this.totalInterestPaid / (this.completionYear * 12); // Assuming you have the total interest paid over the full tenure
+    // Number of years of savings based on the total savings
+    const yearsSavings = this.interestSavings / totalInterestPaidPerMonth / 12; // Convert to years
     // Set the message to display in the HTML, highlighting the amounts in green
     let message = '';
     if (this.interestSavings > 0) {
       // Add interest savings summary if there's savings
       message += `
+      <div class="interest-message" style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); max-width: 600px;">
         <h3 style="text-align: center; color: #4CAF50;">Interest Savings Summary</h3>
-        <p style="font-size: 16px; line-height: 1.6; color: #333;">You've saved a total of <strong style="color: green;">₹${this.formatCurrency(this.interestSavings)}</strong> in interest.</p>
+        <p style="font-size: 16px; line-height: 1.6; color: #333;">You've saved a total of <strong style="color: green;">${this.formatCurrency(this.interestSavings)}</strong> in interest.</p>
         <p style="font-size: 16px; line-height: 1.6; color: #333;">This represents a savings of <strong style="color: green;">${this.interestSavedPercentage}%</strong> compared to your original loan payments.</p>
-        <p style="font-size: 16px; line-height: 1.6; color: #333;">Your savings span a total of <strong style="color: green;">${this.interestSavings / (12 * 10000)} year(s) (OR) ${(this.interestSavings / (12 * 10000) * 12).toFixed(0)} month(s)</strong>.</p>
+        <p style="font-size: 16px; line-height: 1.6; color: #333;">Your savings span a total of <strong style="color: green;">${remainingYears} year(s) (OR) ${remainingMonths} month(s)</strong>.</p>
         <p style="font-size: 16px; line-height: 1.6; color: #333;">That means you would save:</p>
         <ul style="font-size: 16px; line-height: 1.6; color: #333;">
-          <li><strong style="color: #4CAF50;">Average Monthly:</strong> ₹${this.formatCurrency(this.interestSavings / (this.completionYear * 12))} in interest.</li>
-          <li><strong style="color: #4CAF50;">Average Annually:</strong> ₹${this.formatCurrency(this.interestSavings / this.completionYear)} in interest.</li>
+          <li><strong style="color: #4CAF50;">Average Monthly:</strong> ${this.formatCurrency(this.interestSavings / (this.completionYear * 12))} in interest.</li>
+          <li><strong style="color: #4CAF50;">Average Annually:</strong> ${this.formatCurrency(this.interestSavings / this.completionYear)} in interest.</li>
         </ul>
         <p style="font-size: 16px; line-height: 1.6; color: #333;">This means that your payments will be significantly reduced over time!</p>
         <p style="font-size: 16px; line-height: 1.6; color: #333;">Keep up the great work on managing your finances!</p>
@@ -293,6 +299,7 @@ class HomePage {
     } else {
       // If no interest savings, show alert to encourage advance payments
       message += `
+        <div class="interest-message" style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); max-width: 600px; ">
         <h3 style="text-align: center; color: #f44336;">Interest Savings Alert</h3>
         <p style="font-size: 16px; line-height: 1.6; color: #333;">It seems that there are no significant interest savings at this point.</p>
         <p style="font-size: 16px; line-height: 1.6; color: #333;">Consider making advance payments to reduce the interest amount over the remaining loan tenure.</p>
@@ -300,25 +307,32 @@ class HomePage {
       `;
     }
     message += `
-      <div class="interest-message" style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); max-width: 600px; margin: 20px auto;">
-        <h4 style="color: #4CAF50;">Loan and Investment Breakdown:</h4>
-        <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>EMI</strong> ${this.formatCurrency(this.emiPayment)}</p>
-        <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>FD Interest Before Tax (P.M):</strong> ${this.formatCurrency(this.fdInterestBeforeTaxPerMonth)}</p>
-        <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>MF Interest Before Tax (P.M):</strong> ${this.formatCurrency(this.mfInterestBeforeTaxPerMonth)}</p>
-        <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>FD Interest After Tax (P.M):</strong> ${this.formatCurrency(this.fdInterestAfterTaxPerMonth)}</p>
-        <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>MF Interest After Tax (P.M):</strong> ${this.formatCurrency(this.mfInterestAfterTaxPerMonth)}</p>
-        <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>Net Payment(EMI - FD + MF)(P.M):</strong> ${this.formatCurrency(this.netPaymentPerMonth)}</p>
-    
-        <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>Loan Tenure Completion:</strong> ${this.completionYear} year(s)</p>
-        <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>Original Total Interest:</strong> ${this.formatCurrency(this.originalTotalInterest)}</p>
-        <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>Paid Total Interest:</strong> ${this.formatCurrency(this.totalInterestPaid)}</p>
-    
-        <!-- Additional Total Payment Details -->
-        <h4 style="color: #4CAF50;">Total Payment Summary:</h4>
-        <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>Total Advance Payment Made:</strong> ${this.formatCurrency(this.totalAdvancePayment)}</p>
-        <p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>Total Payment Made Till End of ${this.completionYear} year(s):</strong> ${this.formatCurrency(this.totalPaymentMadeTillDate)}</p>
-        <p style="font-size: 14px; line-height: 1.6; color: #666; font-style: italic;">This includes all Total EMI(s) & Advance Payments made over the years.</p>
-      </div>
+      
+       <h4 style="color: #4CAF50;">Loan and Investment Breakdown:</h4>
+<p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>EMI</strong> ${this.formatCurrency(this.emiPayment)}</p>
+<p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>FD Interest Before Tax (P.M):</strong> ${this.formatCurrency(this.fdInterestBeforeTaxPerMonth)}</p>
+<p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>MF Interest Before Tax (P.M):</strong> ${this.formatCurrency(this.mfInterestBeforeTaxPerMonth)}</p>
+<p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>FD Interest After Tax (P.M):</strong> ${this.formatCurrency(this.fdInterestAfterTaxPerMonth)}</p>
+<p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>MF Interest After Tax (P.M):</strong> ${this.formatCurrency(this.mfInterestAfterTaxPerMonth)}</p>
+<p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>Net Payment(EMI - FD + MF)(P.M):</strong> ${this.formatCurrency(this.netPaymentPerMonth)}</p>
+
+<!-- Loan Tenure Completion with Optional Months -->
+<p style="font-size: 16px; line-height: 1.6; color: #333;">
+    <strong>Loan Tenure Completion:</strong> 
+    ${this.completionYear} year(s)
+    ${this.completionMonth > 0 ? `and ${this.completionMonth} month(s)` : ''}
+</p>
+
+<p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>Original Total Interest:</strong> ${this.formatCurrency(this.originalTotalInterest)}</p>
+<p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>Paid Total Interest:</strong> ${this.formatCurrency(this.totalInterestPaid)}</p>
+
+<!-- Additional Total Payment Details -->
+<h4 style="color: #4CAF50;">Total Payment Summary:</h4>
+<p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>Total Advance Payment Made:</strong> ${this.formatCurrency(this.totalAdvancePayment)}</p>
+<p style="font-size: 16px; line-height: 1.6; color: #333;"><strong>Total Payment Made Till End of ${this.completionYear} year(s):</strong> ${this.formatCurrency(this.totalPaymentMadeTillDate)}</p>
+<p style="font-size: 14px; line-height: 1.6; color: #666; font-style: italic;">This includes all Total EMI(s) & Advance Payments made over the years.</p>
+</div>
+
     `;
     this.interestMessage = this.sanitizer.bypassSecurityTrustHtml(message);
   }
