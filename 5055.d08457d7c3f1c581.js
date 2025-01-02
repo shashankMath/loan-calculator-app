@@ -281,7 +281,7 @@ class HomePage {
         <h3 style="text-align: center; color: #4CAF50;">Interest Savings Summary</h3>
         <p style="font-size: 16px; line-height: 1.6; color: #333;">You've saved a total of <strong style="color: green;">${this.formatCurrency(this.interestSavings)}</strong> in interest.</p>
         <p style="font-size: 16px; line-height: 1.6; color: #333;">This represents a savings of <strong style="color: green;">${this.interestSavedPercentage}%</strong> compared to your original loan payments.</p>
-        <p style="font-size: 16px; line-height: 1.6; color: #333;">Your savings span a total of <strong style="color: green;">${remainingYears} year(s) ${remainingMonthsInYear > 0 ? `and ${remainingMonthsInYear} month(s)` : ''} (OR) ${remainingMonths} month(s)</strong>.</p>
+        <p style="font-size: 16px; line-height: 1.6; color: #333;">Your savings span a total of <strong style="color: green;">${remainingYears} year(s) ${remainingMonthsInYear > 0 ? `, ${remainingMonthsInYear} month(s)` : ''} (OR) ${remainingMonths} month(s)</strong>.</p>
         <p style="font-size: 16px; line-height: 1.6; color: #333;">That means you would save:</p>
         <ul style="font-size: 16px; line-height: 1.6; color: #333;">
           <li><strong style="color: #4CAF50;">Average Monthly:</strong> ${this.formatCurrency(this.interestSavings / (this.completionYear * 12))} in interest.</li>
