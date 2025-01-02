@@ -265,7 +265,7 @@ class HomePage {
     const remainingMonths = totalMonths - (this.completionYear * 12 + this.completionMonth);
     // Calculate years from the remaining months
     const remainingYears = Math.floor(remainingMonths / 12);
-    const remainingMonthsInYear = remainingYears % 12;
+    const remainingMonthsInYear = remainingMonths % 12;
     // Calculate the average interest per month for the remaining tenure
     if (remainingMonths > 0) {
       avgInterestAmtForRemainingTenure = this.interestSavings / remainingMonths;
