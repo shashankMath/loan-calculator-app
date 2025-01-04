@@ -117,102 +117,29 @@
   </ion-card>
 
   <!-- Display results -->
+  <ion-card>
+    <div [innerHTML]="interestMessage"></div>
+  </ion-card>
   <ion-card *ngIf="emiList.length > 0">
-    <ion-card-header>
-      <ion-card-title>Loan Payment and Investment Summary</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-grid>
-        <!-- Common Investment Details (Above Table) -->
-        <ion-row>
-          <ion-col>
-            <strong>FD Interest Before Tax (P.M):</strong>
-            {{ fdInterestBeforeTaxList[0] | currency: 'INR' }}
-          </ion-col>
-          <ion-col>
-            <strong>MF Interest Before Tax (P.M):</strong>
-            {{ mfInterestBeforeTaxList[0] | currency: 'INR' }}
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <strong>FD Interest After Tax (P.M):</strong>
-            {{ fdInterestAfterTaxList[0].fdInterestAfterTax | currency: 'INR' }}
-          </ion-col>
-          <ion-col>
-            <strong>MF Interest After Tax (P.M):</strong>
-            {{ mfInterestAfterTaxList[0].mfInterestAfterTax | currency: 'INR' }}
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <strong>Net Payment(EMI - FD + MF)(P.M)</strong>
-            {{ netPaymentList[0].netPayment | currency: 'INR' }}
-          </ion-col>
-          <ion-col>
-            <strong>Loan Tenure Completion:</strong>
-            {{ completionYear }} year(s)
-            <!-- Only show month if it's greater than 0 -->
-            <span *ngIf="completionMonth > 0"
-              >and {{ completionMonth }} month(s)</span
-            >
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <strong>Original Total Interest:</strong>
-            {{ formatCurrency(originalTotalInterest) }}
-          </ion-col>
-          <ion-col>
-            <strong>Paid Total Interest:</strong>
-            {{ formatCurrency(totalInterestPaid) }}
-          </ion-col>
-        </ion-row>
-     
-       
-        <ion-row>
-          <ion-col>
-            <strong>Total Advance Payment Made:</strong> {{
-            formatCurrency(totalAdvancePayment) }}
-          </ion-col>
-          <ion-col>
-            <strong
-              >Actual Savings (Interest Savings - Total Advance
-              Payment) & Savings in %:</strong
-            >
-            {{ formatCurrency(actualSavings) }} , {{actualSavingAfterRepayment}}
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <strong>Interest Savings & Savings in %:</strong>
-            {{ formatCurrency(interestSavings) }}, {{ interestSavedPercentage }}
-          </ion-col>
-        </ion-row>
-        <!-- Table Headers (Sticky) -->
-        <ion-row class="sticky-header">
-          <ion-col><strong>Year</strong></ion-col>
-          <ion-col><strong>Month</strong></ion-col>
-          <ion-col><strong>EMI</strong></ion-col>
-          <ion-col><strong>Principal Paid</strong></ion-col>
-          <ion-col><strong>Interest Paid</strong></ion-col>
-        </ion-row>
+    <ion-row class="sticky-header">
+      <ion-col><strong>Year(Months)</strong></ion-col>
+      <ion-col><strong>EMI</strong></ion-col>
+      <ion-col><strong>Principal Paid</strong></ion-col>
+      <ion-col><strong>Interest Paid</strong></ion-col>
+    </ion-row>
 
-        <!-- Display EMI list with conditional row highlighting -->
-        <ion-row
-          *ngFor="let item of emiList; let i = index"
-          [ngClass]="{
-            'highlight-negative-payment': netPaymentList[i].netPayment < 0 && item.emi > 0,
-            'highlight-emizero': item.emi === 0
-          }"
-        >
-          <ion-col>{{ item.year }}</ion-col>
-          <ion-col>{{ item.month }}</ion-col>
-          <ion-col>{{ item.emi | currency: 'INR' }}</ion-col>
-          <ion-col>{{ principalPaidList[i] | currency: 'INR' }}</ion-col>
-          <ion-col>{{ interestPaidList[i] | currency: 'INR' }}</ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-card-content>
+    <!-- Display EMI list with conditional row highlighting -->
+    <ion-row
+      *ngFor="let item of emiList; let i = index"
+      [ngClass]="{
+        'highlight-negative-payment': netPaymentList[i].netPayment < 0 && item.emi > 0,
+        'highlight-emizero': item.emi === 0
+      }"
+    >
+      <ion-col>{{ item.year }}({{ item.month }})</ion-col>
+      <ion-col>{{ item.emi | currency: 'INR' }}</ion-col>
+      <ion-col>{{ principalPaidList[i] | currency: 'INR' }}</ion-col>
+      <ion-col>{{ interestPaidList[i] | currency: 'INR' }}</ion-col>
+    </ion-row>
   </ion-card>
 </ion-content>
